@@ -1,0 +1,293 @@
+:root {
+  /* rgb(253, 195, 200) */
+  --primary-color: #CD2BFF;
+  --second-light-color: #f4e3f9;
+  --second-color: #F3CCFF;
+  --third-color: #FF2BDD;
+  --primary-shadow-color: #9b4bf8;
+  --second-shadow-color: #CCCBCB;
+  --light-color: #ffffff;
+
+  font-family: 'Josefin Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+}
+
+* {
+  font-family: 'Josefin Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+code {
+  font-family: 'Josefin Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  color: var(--primary-color);
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* login */
+.logo {
+  text-align: center;
+}
+
+.loginCard {
+  display: flex;
+  width: 350px;
+  /* min-height: 350px; */
+  align-items: center;
+  border-radius: 4px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  /* background-color: rgb(253, 195, 200); */
+}
+
+.loginCard h2 {
+  margin-top: 20px;
+}
+
+.login-container {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url('./images/bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* border: 2px solid red; */
+
+}
+
+.loginBtn {
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding: 9px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  width: 100%;
+  font-family: inherit;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  cursor: pointer;
+  box-shadow: 0px 8px 15px var(--second-color);
+  transition: all 0.3s ease 0s;
+}
+
+.loginBtn:hover {
+  border-color: var(--primary-color);
+  background: transparent;
+  color: var(--primary-color);
+  transform: translateY(-1px);
+}
+
+.register {
+  float: right;
+  text-align: right;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.forgotPassword {
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: var(--third-color);
+  cursor: pointer;
+}
+
+.register:hover {
+  color: var(--third-color);
+}
+
+.forgotPassword:hover {
+  color: var(--primary-color);
+}
+
+
+/* Main Layout */
+.mainLayout {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.dashboardMainSection {
+  /* background-color: var(--second-light-color); */
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.dashboardBody {
+  width: calc(100vw - 50px);
+  height: calc(100vh - 3.5em);
+  overflow: hidden;
+}
+
+
+/* 
+ 
+  .tooltip-menu position: relative
+   &::before position: absolute top: 47% transform: translateY(-50%) left: 100% margin-left: 10px content: attr(data-text) width: 200px padding:10px border-radius:10px background:#000 color: #fff text-align: center 
+    */
+
+
+/* List Page */
+.listPage {
+  display: flex;
+  margin: 20px auto;
+  width: 90%;
+  flex-direction: column;
+  /* background: red; */
+  align-items: center;
+}
+
+.listHeader {
+  display: flex;
+  width: 92%;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.listing {
+  width: 90%;
+  background: #fff;
+  /* border: 1px solid var(--primary-color); */
+  border-radius: 4px;
+  /* box-shadow: 0 0px 4px var(--primary-shadow-color); */
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+  padding: 10px;
+  font-family: 'Josefin Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+}
+
+
+/* .MuiDataGrid-columnHeaders{
+  background-color: var(--primary-color) !important;
+  color: #ffffff !important;
+} */
+.MuiDataGrid-columnHeaderTitle {
+  font-weight: 800 !important;
+  text-transform: uppercase !important;
+}
+.MuiTablePagination-toolbar p,
+.MuiInputBase-input,
+.MuiFormControlLabel-label{
+    font-family: 'Josefin Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+.actionBtnIcon{
+  cursor: pointer;
+}
+
+
+/* form */
+.form {
+  display: flex;
+  width: 50%;
+  margin: 40px auto;
+  background: #fff;
+  /* border: 1px solid var(--primary-color); */
+  border-radius: 4px;
+  /* box-shadow: 0 0px 4px var(--primary-shadow-color); */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  padding: 10px;
+  font-family: 'Josefin Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form .formTitle {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Button */
+.actionButton {
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding: 9px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: inherit;
+  margin:0px 10px;
+
+  transition: all 0.3s ease 0s;
+}
+
+.actionButton.create_new,
+.actionButton.create,
+.actionButton.update {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  cursor: pointer;
+  box-shadow: 0px 8px 15px var(--second-color);
+}
+
+.create_new:hover,
+.create:hover,
+.update:hover {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  background: transparent;
+  transform: translateY(-1px);
+}
+
+.actionButton.cancel {
+  color: gray;
+  background-color: #ffffff;
+  cursor: pointer;
+  border: 1px solid gray;
+  box-shadow: 0px 8px 15px var(--second-color);
+  margin-right: 0px !important;
+}
+
+.actionButton.cancel:hover {
+  border-color: var(--third-color);
+  color: var(--third-color);
+  background: transparent;
+    transform: translateY(-1px);
+}
+.actionButton.change_password {
+  margin: 0px !important;
+  color: var(--light-color);
+  background-color: var(--third-color);
+  cursor: pointer;
+  border: 1px solid var(--light-color);
+  box-shadow: 0px 8px 15px var(--second-color);
+}
+
+.actionButton.change_password:hover {
+  background: transparent;
+  transform: translateY(-1px);
+  border-color: var(--third-color);
+  color: var(--third-color);
+}
+
+
+.MuiSwitch-thumb{
+  color:var(--primary-color)!important;
+}
+.css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked+.MuiSwitch-track{
+  background-color: var(--primary-color) !important;
+}
